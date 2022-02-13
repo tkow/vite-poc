@@ -70,6 +70,13 @@ function App() {
           }}
           value={'Current State Update'}
         />
+        <input
+          type="button"
+          onClick={() => {
+            setStateLog(state)
+          }}
+          value={'Current State Update'}
+        />
         <p>current: {JSON.stringify(stateLog)}</p>
       </header>
     </div>
