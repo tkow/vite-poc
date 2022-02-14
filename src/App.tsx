@@ -4,6 +4,7 @@ import './App.css'
 import NumberInput from './components/NumberInput'
 import TextInput from './components/TextInput'
 import Timer from './components/Timer'
+import {Test, TextContext} from './hooks-comonent'
 import { useStateFactory } from 'react-inner-hooks-extension'
 
 function App() {
@@ -78,6 +79,10 @@ function App() {
           value={'Current State Update'}
         />
         <p>current: {JSON.stringify(stateLog)}</p>
+        <Test />
+        <TextContext.Provider value='b'>
+          <Test />
+        </TextContext.Provider>
       </header>
     </div>
   )
